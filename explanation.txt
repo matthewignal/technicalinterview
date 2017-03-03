@@ -1,0 +1,9 @@
+1. In question 1, I changed my algorithm to make a dictionary based on the occurrences of letters in the substrings of s and compared them to the t dictionary. Compared to my old solution of jumbling the letters to find all possible permutations, this requires less complexity. I now have four iterations through strings, so the time complexity is roughly O(4n) and the space complexity is O(4n).
+
+2. In question 2, I had to iterate through each letter of the string and then iterate through the rest of the string. This is a nested for loop, so the time complexity is O(n^2) and the space complexity is O(n). With the list of substrings sorted with the longest one first, I could then pick out the first that was a palindrome.
+
+3. In question 3, I converted an adjacency list, which was really a dictionary with a list of values, to something more uniform so that I could sort all the edges from least to greatest as part of Kruskal's algorithm to find the minimum spanning tree. This quicksort has a time complexity of O(nlog(n)) and a space complexity of O(log(n)).
+
+4. In question four, I changed my algorithm to see if r was between the smaller and larger of the nodes. If it wasn't, I found a new root by searching through the tree based on the old one. This is a space complexity of O(1) and a time complexity of O(n/2), as the runtime depends on the height of the tree, and we have a balanced tree by this method.
+
+5. In question 5, I have to iterate through each number up to the number of elements until the end in a for loop. Then, I have to find the next element by iterating through the linked list, so the complexity should be roughly O(2n).
